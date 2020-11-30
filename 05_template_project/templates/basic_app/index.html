@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+
+      <h1>WELCOME TO INDEX</h1>
+      <!-- <h2>INHERITASYON</h2> -->
+      <!-- https://docs.djangoproject.com/en/3.1/ref/templates/builtins/#ref-templates-builtins-filters -->
+      <h1>{{text | upper}}</h1> #
+      <h1>{{number|add:'99'}}</h1>
+      <h1>{{text|cut:'n'}}</h1>
+{% endblock %}
